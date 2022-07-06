@@ -1,0 +1,203 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.NFT_card {
+  background-color: hsla(216, 51%, 16%, 1);
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+  border-radius: 15px;
+  width: 302px;
+  height: 548px;
+  padding: 24px;
+}
+
+.container_to_fade {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  max-width: 100%;
+}
+
+.NFT_equilibrium {
+  max-width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.eye_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 302px;
+  height:302px;
+  border-radius: 8px;
+  cursor: pointer;
+  max-width: 100%;
+  background: hsla(178, 100%, 50%, 0.5);
+  display: none;
+}
+
+.eye {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-family: Outfit, sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27.72px;
+  color: hsla(0, 0%, 100%, 1);
+  font-style: normal;
+  cursor: pointer;
+}
+
+p {
+  margin-bottom: 24px;
+  font-family: Outfit, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: hsla(215, 51%, 70%, 1);
+  font-style: normal;
+}
+
+.Eth_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.line {
+  border-bottom-width: 1px;
+  border-style: solid;
+  border-color: hsla(216, 32%, 27%, 1);
+  margin-bottom: 16px;
+}
+
+.Eth_price {
+  color: hsla(178, 100%, 50%, 1);
+  font-family: Outfit, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20.16px;
+  font-style: normal;
+}
+
+.Time_left {
+  color: hsla(215, 51%, 70%, 1);
+  font-family: Outfit, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.16px;
+  font-style: normal;
+}
+
+ .Jules_Box img {
+   box-sizing: border-box;
+   border: 1px;
+   border-style: solid;
+   border-color: hsla(0, 0%, 100%, 1);
+   border-radius: 360px;
+   height: 33px;
+   width: 33px;
+   margin-right: 24px;
+}
+
+.Jules_Box {
+  color: hsla(215, 51%, 70%, 1);
+  font-family: Outfit, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.16px;
+  font-style: normal;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.Name {
+  color: hsla(0, 0%, 100%, 1);
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+h1:hover {
+  color: hsla(178, 100%, 50%, 1);
+}
+
+.Name:hover {
+  color: hsla(178, 100%, 50%, 1);
+}
+
+.container_to_fade:hover .eye_container {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 302px;
+  height:302px;
+  border-radius: 8px;
+  cursor: pointer;
+  max-width: 100%;
+  background: hsla(178, 100%, 50%, 0.5);
+}
